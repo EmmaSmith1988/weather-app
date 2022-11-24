@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import News from './components/news/News';
+import Widget from './components/widget/Widget';
 import FetchWrapper from './fetch-wrapper';
 
 function App() {
@@ -54,13 +56,18 @@ function App() {
   }
   
   return (
-    <div className="app">
-      <h1 className='app-title'>Weather App</h1>
-      <p className='app-text'>Good {greeting}, how are you?</p>
-      <p className='app-text'>The current weather in {location} is {temperature} degrees</p>
-      <img className='app-image' src={imgUrl} alt="weather icon" />
+    <>
+      <div className="app">
+        <h1 className='app-title'>Weather App</h1>
+        <p className='app-text'>Good {greeting}, how are you?</p>
+        <p className='app-text'>The current weather in {location} is {temperature} degrees</p>
+        <img className='app-image' src={imgUrl} alt="weather icon" />
+      </div>
       
-    </div>
+      <Widget>
+        <News />
+      </Widget>
+    </>
   );
 }
 

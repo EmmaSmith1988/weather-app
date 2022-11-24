@@ -1,0 +1,14 @@
+.widget {
+    text-align: center;
+    /* margin: 200px auto;  */
+    border: 10px solid rgb(0, 140, 255);
+    border-radius: 15px;
+    width: 500px;
+    height: 400px;
+    background-color: whitesmoke;
+    overflow:scroll
+  }
+.widget * {
+    color: rgba(0, 0, 0, 0.833);
+    background-color: whitesmoke;
+   }
