@@ -1,8 +1,6 @@
-import './Button.css'
-
 const Button = () => {
   return (
-    <button>Find out about your day</button>
+    <button className='font-bold underline'>Find out about your day</button>
   )
 }
 

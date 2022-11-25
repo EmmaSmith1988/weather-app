@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import './News.css'
 import axios from 'axios'
 import NewsItem from '../newsItem/NewsItem'
 
