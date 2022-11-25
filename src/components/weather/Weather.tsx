@@ -46,12 +46,10 @@ const Weather = () => {
 
 
   return (
-    <div className="weather">
-   
-        <h1 className='weather-title'>Weather App</h1>
-        <p className='weather-text'>Good {greeting}, how are you?</p>
-        {weather && <p className='weather-text'>The current weather in {weather.name} is {weather.temperature} degrees</p>}
-        {weather && <img className='weather-image' src={weather.image} alt="weather icon" />}
+    <div className="bg-weather bg-cover w-1/2 h-96 text-center rounded-2xl text-gray-800">
+        <p className='p-16 font-sans text-4xl font-bold'>Good {greeting}</p>
+        {weather && <p className='text-2xl'>The current weather in {weather.name} is {weather.temperature} degrees</p>}
+        {weather && <img className='m-auto w-36' src={weather.image} alt="weather icon" />}
       </div>
   )
 }

@@ -6,7 +6,6 @@
     width: 500px;
     height: 400px;
     background-color: whitesmoke;
-    overflow:scroll
   }
 .widget * {
     color: rgba(0, 0, 0, 0.833);

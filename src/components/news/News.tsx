@@ -16,11 +16,11 @@ function News() {
     
 
   return (
-    <div className='news'>
-        <h1>Current News Headlines</h1>
-        {news.slice(0,5).map(article => {
+    <div className='bg-[#e7cfad] mx-16 rounded-2xl h-96'>
+        <h1 className='p-8 font-sans text-4xl font-bold text-center'>Current News Headlines</h1>
+        {news.slice(0,5).map((article, key: number) => {
             return (
-                <NewsItem title={article['title']} link={article['url']} />
+                <NewsItem key={key} title={article['title']} link={article['url']} />
             )
         })}
     </div>

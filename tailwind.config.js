@@ -2,10 +2,17 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
-    //"./public/index.html"
+    "./public/index.html"
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      
+    },
+    extend: {
+      backgroundImage: {
+        'weather': "url('./images/weather.jpg')",
+      }
+    },
   },
   plugins: [],
 }

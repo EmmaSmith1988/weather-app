@@ -1,14 +1,15 @@
 import './NewsItem.css'
 type Props = {
     title: string,
-    link: string
+    link: string,
+    key: number
 }
 
-const NewsItem = ({title, link}: Props) => {
+const NewsItem = ({title, link, key}: Props) => {
   return (
-    <div className='news-item'>
-        <h4 className='news-title'>{title}</h4>
-        <a href={link} className="news-link">{link}</a>
+    <div key={key} className='px-8 pb-4'>
+        
+        <a href={link}><span className='pr-8 text-purple-800'>Click to read -&gt;</span><span>{title}</span></a>
     </div>
   )
 }

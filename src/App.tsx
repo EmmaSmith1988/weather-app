@@ -1,22 +1,16 @@
-
 import News from './components/news/News';
-import Widget from './components/widget/Widget';
 import Weather from './components/weather/Weather';
-import Button from './components/button/Button';
+import TodoList from './components/todoList/TodoList';
 
 function App() {
   
   return (
     <>
-      <h1 className='font-bold underline'>Hello world</h1>
-      <Button />
-      <Widget>
+    <div className='flex justify-between mb-10 mx-16'>   
+        <TodoList />
         <Weather />
-      </Widget>
-      
-      <Widget>
+      </div>
         <News />
-      </Widget>
     </>
   );
 }
