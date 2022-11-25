@@ -1,7 +1,6 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import './News.css'
 import axios from 'axios'
-import { useState } from 'react'
 import NewsItem from '../newsItem/NewsItem'
 
 function News() {
@@ -10,7 +9,6 @@ function News() {
     useEffect(() => {
         const getNews = async () => {
             const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=gb&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`)
-            console.log(response)
             setNews(response.data.articles)
         }
         getNews()
