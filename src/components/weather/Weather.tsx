@@ -46,10 +46,10 @@ const Weather = () => {
 
 
   return (
-    <div className="bg-weather bg-cover w-1/2 h-96 text-center rounded-2xl text-gray-800">
-        <p className='p-16 font-sans text-4xl font-bold'>Good {greeting}</p>
-        {weather && <p className='text-2xl'>The current weather in {weather.name} is {weather.temperature} degrees</p>}
-        {weather && <img className='m-auto w-36' src={weather.image} alt="weather icon" />}
+    <div className="bg-weather bg-cover lg:w-1/2 h-40 lg:h-96 text-center rounded-2xl text-gray-800">
+        <p className='lg:p-16 font-sans text-2xl lg:text-4xl font-bold'>Good {greeting}</p>
+        {weather && <p className='text-xl lg:text-2xl'>The current weather in {weather.name} is {weather.temperature} degrees</p>}
+        {weather && <img className='m-auto lg:w-36' src={weather.image} alt="weather icon" />}
       </div>
   )
 }

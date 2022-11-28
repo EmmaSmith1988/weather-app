@@ -21,9 +21,9 @@ const TodoList = () => {
   }
 
   return (
-    <div className="border-2 w-1/3 rounded-2xl text-center flex-col bg-[#242424] text-white">
-    <h3 className="p-6 font-sans text-4xl font-bold">Today's Todo List</h3> 
-    <input value={currentTodo} className="p-2 mr-8 w-60 rounded-2xl text-black" type='text' placeholder="Task..." onChange={handleChange}></input>
+    <div className="border-2 p-2 lg:w-1/3 rounded-2xl text-center flex-col bg-[#242424] text-white">
+    <h3 className="p-2 lg:p-6 font-sans text-2xl lg:text-4xl font-bold">Today's Todo List</h3> 
+    <input value={currentTodo} className="p-2 mb-2 mr-2 lg:mr-8 w-60 rounded-2xl text-black" type='text' placeholder="Task..." onChange={handleChange}></input>
     <Button handleClick={handleAddTodo} text={'Add todo'}/>
    
     {todos.map((todo:string, key:number) => {

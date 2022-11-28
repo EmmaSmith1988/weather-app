@@ -16,8 +16,8 @@ function News() {
     
 
   return (
-    <div className='bg-[#e7cfad] mx-16 rounded-2xl h-96'>
-        <h1 className='p-8 font-sans text-4xl font-bold text-center'>Current News Headlines</h1>
+    <div className='bg-[#e7cfad] lg:mx-16 rounded-2xl mb-10 lg:h-96'>
+        <h1 className='p-8 font-sans text-2xl lg:text-4xl font-bold text-center'>Current News Headlines</h1>
         {news.slice(0,5).map((article, key: number) => {
             return (
                 <NewsItem key={key} title={article['title']} link={article['url']} />

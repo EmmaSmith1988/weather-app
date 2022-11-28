@@ -6,9 +6,9 @@ function App() {
   
   return (
     <>
-    <div className='flex justify-between mb-10 mx-16'>   
-        <TodoList />
-        <Weather />
+    <div className='lg:flex lg:flex-row-reverse lg:justify-between lg:mb-10 lg:mx-16'>      
+    <Weather />
+    <TodoList />   
       </div>
         <News />
     </>
